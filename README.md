@@ -34,3 +34,24 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+## Add posts
+
+```
+# Ant Design（antd）
+npm install antd @ant-design/icons
+
+
+# 1.用 gray-matter 读取 md 文件的元数据（如标题、日期、标签等）。
+npm install gray-matter remark remark-html
+
+# 2.文章详情页优雅地支持完整 Markdown 语法渲染
+npm install remark remark-html
+
+如要支持表格/任务列表/更强扩展，可加装 remark-gfm：
+npm install remark-gfm
+
+npm install github-markdown-css
+
+```
