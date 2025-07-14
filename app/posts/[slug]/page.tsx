@@ -10,7 +10,7 @@ import styles from "../../Homepage.module.css";
 import 'github-markdown-css/github-markdown-light.css';
 
 
-export default async function PostPage({ params }: { params: { slug: string } }) {
+export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const filePath = path.join(process.cwd(), "posts", `${slug}.md`);
   const fileContents = fs.readFileSync(filePath, "utf8");
